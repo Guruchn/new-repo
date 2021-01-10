@@ -1,0 +1,281 @@
+    1  mkdir jfrog
+    2  cd jfrog/
+    3  wget http://jfrog.bintray.com/artifactory/jfrog-artifactory-cpp-ce-6.9.6.zip
+    4  apt-get install unzip
+    5  ls
+    6  unzip jfrog-artifactory-cpp-ce-6.9.6.zip 
+    7  ls
+    8  mv artifactory-cpp-ce-6.9.6/ jfrog
+    9  ls
+   10  export JFROG_HOME=/home/ubuntu/jfrog
+   11  apt-get install curl
+   12  curl localhost:8082
+   13  curl localhost:8081
+   14  curl localhost:8080
+   15  cd jfrog
+   16  ls
+   17  ls webapps
+   18  $JFROG_HOME/artifactory/app/bin/artifactoryctl
+   19  ks
+   20  ls
+   21  cd .
+   22  cd ..
+   23  ls
+   24  mv jfrog artifactory
+   25  ls
+   26  $JFROG_HOME/artifactory/app/bin/artifactoryctl
+   27  cd artifactory/
+   28  ls
+   29  ls app
+   30  cd bin
+   31  ks
+   32  ls
+   33  sh artifactory.sh
+   34  apt-get install java-1.8*
+   35  apt-get install java-1.8
+   36  apt-get install java
+   37  sudo apt-get install openjdk-8-jdk
+   38  java -version
+   39  curl localhost:8081
+   40  curl localhost:8082
+   41  clear
+   42  ls
+   43  sh artifactory.sh
+   44  service httpd
+   45  service httpd sstart
+   46  apt install httpd
+   47  apt install httpd*
+   48  systemctl httpd start
+   49  exit
+   50  cat /etc/passwd
+   51  systemctl http start
+   52  systemctl httpd start
+   53  systemctl start httpd
+   54  service start httpd
+   55  service httpd start
+   56  apt-get install httpd*
+   57  apt-get install httpd* bind*
+   58  service httpd start
+   59  /bin
+   60  cd /bin
+   61  ls
+   62  find httpd.service
+   63  apt-get install apache*
+   64  system-ctl apache status
+   65  system-ctl httpd status
+   66  systemctl httpd status
+   67  systemctl status status
+   68  service httpd start
+   69  service apache start
+   70  systemctl httpd start
+   71  systemctl start httpd
+   72  apache2ctl -v
+   73  apache2ctl start
+   74  apache2ctl status
+   75  ifconfig
+   76  vi /var/www/html
+   77  cd /var/www/html
+   78  ls
+   79  vi index.html 
+   80  cd index.html index2.html
+   81  cd index.html /html/index2.html
+   82  cp index.html index2.html
+   83  ls
+   84  mv index.html /www
+   85  ls
+   86  mv index2.html index.html
+   87  ls
+   88  apache2ctl restart
+   89  vi index.html 
+   90  rm index.html 
+   91  touch index.html
+   92  vi index.html 
+   93  apache2ctl restart
+   94  cd /etc/httpd/conf
+   95  cd /etc/
+   96  ls
+   97  cd apache2
+   98  ls
+   99  cat apache2.conf
+  100  cat /etc/named.conf
+  101  cd ..
+  102  ls
+  103  cat bind
+  104  cd bind
+  105  ls
+  106  cat named.conf
+  107  cat zones.rfc1918 
+  108  cat named.conf.local
+  109  cat named.conf.default-zones 
+  110  apt-get install openssl
+  111  apt-get mod_ssl
+  112  apt-get install mod_ssl
+  113  apt-get install mod*
+  114  a2enmod ssl
+  115  service apache2 restart
+  116  openssl genrsa -out ca.key 2048
+  117  ls
+  118  mv ca.key /home/
+  119  ls
+  120  cd /home
+  121  ls
+  122  cat ca.key 
+  123  openssl req -new -key ca.key -out ca.csr
+  124  ls
+  125  cat ca.csr
+  126  openssl x509 -days 365 -in ca.csr -signkey ca.key -out ca.crt
+  127  openssl x509 -req -days 365 -in ca.csr -signkey ca.key -out ca.crt
+  128  apt-get install kubectl
+  129  curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl"
+  130  chmod +x ./kubectl
+  131  sudo mv ./kubectl /usr/local/bin/kubectl
+  132  kubectl version --client
+  133  sudo apt-get update
+  134  sudo apt-get install -y kubectl
+  135  sudo apt-get update && sudo apt-get install -y apt-transport-https gnupg2 curl
+  136  curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+  137  echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/apt/sources.list.d/kubernetes.list
+  138  sudo apt-get update
+  139  sudo apt-get install -y kubectl
+  140  curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
+  141  sudo dpkg -i minikube_latest_amd64.deb
+  142  minikube start
+  143  apt-get install terraform*
+  144  wget https://releases.hashicorp.com/terraform/0.12.24/terraform_0.12.24_linux_amd64.zip
+  145  unzip terraform_0.12.24_linux_amd64.zip 
+  146  ls
+  147  cd terraform
+  148  ls -la
+  149  sudo mv terraform /usr/local/bin
+  150  cd /usr/local/bin
+  151  ls
+  152  terraform version
+  153  mkdir ~/terraform
+  154  cd ~/terraform
+  155  vi config.tf
+  156  terraform.init
+  157  terraform init
+  158  terraform validate
+  159  vi config.tf 
+  160  terraform validate
+  161  git clone https://github.com/terraform-providers/terraform-provider-aws.git
+  162  apt-get install terraform
+  163  terraform
+  164  mkdir terraform_proj
+  165  cd terraform_
+  166  cd terraform_proj/
+  167  terraform init
+  168  touch main.tf
+  169  ls
+  170  vi main.tf 
+  171  terraform init
+  172  vi main.tf 
+  173  terraform init
+  174  export AWS_ACCESS_KEY_ID = AKIARJ4746ECY27J2IPT
+  175  export AWS_ACCESS_KEY_ID=AKIARJ4746ECY27J2IPT
+  176  export AWS_SECRET_ACCESS_KEY_ID=SyabTvU/V1/MJzj4LxXWNexYc1j640T/LFPygFoC
+  177  terraform plan
+  178  terraform console
+  179  terraform apply -refresh=false
+  180  terraform plan -out iam.tfplan
+  181  ls
+  182  cat iam.tfplan 
+  183  terraform apply iam.tfplan 
+  184  terraform apply -target=aws_iam_user.my_iam_user
+  185  terraform validate
+  186  terraform fmt
+  187  terraform validate
+  188  ls
+  189  terraform show
+  190  exportTF
+  191  export TF_VAR_iam_user_name_prefix = FROM_ENV_VARIABLE_IAM_PREFIX
+  192  export TF_VAR_iam_user_name_prefix=FROM_ENV_VARIABLE_IAM_PREFIX
+  193  terraform plan -refresh=false -var="iam_user_name_prefix=VALUE_FROM
+  194  "
+  195  terraform plan -refresh=false -var="iam_user_name_prefix=VALUE_FROM"
+  196  terraform workspace show
+  197  terraform workspace new prod-env
+  198  terraform workspace select default
+  199  terraform workspace list
+  200  ls
+  201  vi main.tf
+  202  terraform plan
+  203  AWS_ACCESS_KEY_ID
+  204  env AWS_ACCESS_KEY_ID
+  205  export AWS_ACCESS_KEY_ID="AKIARJ4746ECY27J2IPT"
+  206  export AWS_SECRET_ACCESS_KEY_ID="SyabTvU/V1/MJzj4LxXWNexYc1j640T/LFPygFoC"
+  207  terraform plan
+  208  export AWS_SECRET_ACCESS_KEY="SyabTvU/V1/MJzj4LxXWNexYc1j640T/LFPygFoC"
+  209  export AWS_DEFAULT_REGION="us-east-1"
+  210  terraform plan
+  211  terraform apply
+  212  vi main.tf 
+  213  terraform apply
+  214  vi main.tf 
+  215  terraform apply
+  216  vi main.tf 
+  217  terraform apply
+  218  vi main.tf 
+  219  terraform apply
+  220  vi main.tfs
+  221  ls
+  222  vi main.tf 
+  223  terraform plan
+  224  vi main.tf 
+  225  terraform plan
+  226  vi main.tf 
+  227  terraform plan
+  228  vi main.tf 
+  229  terraform plan
+  230  vi main.tf 
+  231  terraform plan
+  232  vi main.tf 
+  233  terraform plan
+  234  vi main.tf 
+  235  terraform plan
+  236  terraform apply -out g89.tfplan
+  237  terraform apply 
+  238  mkdir demo-2
+  239  cd demo-2/
+  240  touch terraform.tfvar
+  241  touch terraform.tfvars
+  242  ls
+  243  rm terraform.tfvar
+  244  ls
+  245  vim terraform.tfvars 
+  246  vi instance.tf
+  247  systemctl restart jenkins
+  248  service restart jenkins
+  249  system start jenkins
+  250  systemctl start jenkins
+  251  systemctl status jenkins
+  252  vim /etc/sysconfig/jenkins  
+  253  cd /etc
+  254  ls
+  255  cd sysctl.d
+  256  ls
+  257  cd ..
+  258  cd systemd
+  259  ls
+  260  cd ..
+  261  ls
+  262  cat services
+  263  apt-get install zabbix
+  264  exit
+  265  apt-get install git
+  266  git --version
+  267  mkdir DU
+  268  cd DU
+  269  git init
+  270  touch p1.txt
+  271  vi p1.txt 
+  272  git .
+  273  git add .
+  274  git staus
+  275  git status
+  276  git add -a -m "initial
+"
+  277  git commit -m "initial"
+  278  git status
+  279  history
+  280  history >> history.txt
